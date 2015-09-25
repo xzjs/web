@@ -1,0 +1,49 @@
+.navlist {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 190px;
+  height: 555px;
+  background: #FFF; }
+  .navlist .navlist-ul {
+    position: relative;
+    height: 555px;
+    width: 190px;
+    list-style: none;
+    overflow: hidden; }
+    .navlist .navlist-ul .item {
+      position: relative;
+      float: left;
+      background: #33B49D;
+      width: 180px;
+      height: 45px;
+      border-bottom: 1px #25A08A solid;
+      border-right: 2px #03715D solid; }
+      .navlist .navlist-ul .item .type {
+        display: inline-block;
+        height: 34px;
+        width: 160px;
+        line-height: 34px;
+        padding: 5px 20px;
+        color: #FFFFFF;
+        font-size: 16px;
+        text-decoration: none; }
+      .navlist .navlist-ul .item.neibourPrev {
+        border-bottom: 2px #03715D solid; }
+      .navlist .navlist-ul .item.neibourNext {
+        border-top: 2px #03715D solid; }
+      .navlist .navlist-ul .item.on {
+        background: #FFFFFF;
+        width: 178px;
+        border-left: 2px #03715D solid;
+        border-top: none;
+        height: 46px;
+        border-bottom: none;
+        border-right: none; }
+        .navlist .navlist-ul .item.on.first {
+          height: 47px; }
+        .navlist .navlist-ul .item.on .type {
+          padding-left: 19px;
+          color: #000000; }
+
+/*# sourceMappingURL=navlist.css.map */

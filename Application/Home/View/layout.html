@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>首页</title>
+    <meta http-equiv="mobile-agent" content="format=xhtml; url=http://m.ymt.com/">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/navlist.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/content.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/navdetail.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css">
+</head>
+<body data-module="home" data-isblack="1">
+<div class="nav">
+    <div class="w990">
+        <ul>
+            <li><a href="__URL__/index">首页</a></li>
+            <li><a href="__URL__/productbuy">商品采购</a></li>
+            <li><a href="__URL__/supply">商品供应</a></li>
+            <li><a href="__URL__/market">今日行情</a></li>
+
+            <li><input type="text"></li>
+            <li><a href="#">搜索</a></li>
+        </ul>
+        <div class="entrust">
+            <if condition="isset($_SESSION['user'])">
+                <a rel="nofollow" id="btn-topnav-purchase-open" href="__URL__/register" class="sell">{$_SESSION['user'].email}</a>
+                <a rel="nofollow" href="__URL__/logout" class="sell" name="btn-topnav-supply-open">退出</a>
+                <else/>
+                <a rel="nofollow"  href="__URL__/register" class="sell">注册</a>
+                <a rel="nofollow" href="__URL__/login" class="sell" name="btn-topnav-supply-open">登录</a>
+            </if>
+        </div>
+    </div>
+</div>
+{__CONTENT__}
+<div class="footer">
+    <div class="f-line">
+        <div class="w450">
+            <span class="w400">咨询联系专线：4008983008</span>
+            <span class="w170">一亩田服务QQ：4008983008</span>
+            <a class="qq" rel="nofollow" id="footer-qq" target="_blank" href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODA3MDE4OF8xNTI2MDFfNDAwODk4MzAwOF8yXw"><img src="__PUBLIC__/qq_jt.png"></a>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="c-line1">
+            <a rel="nofollow" href="http://zixun.ymt.com/show-33-667723-1.html" target="_blank">关于一亩田</a> |
+            <a rel="nofollow" href="http://zixun.ymt.com/show-33-669154-1.html" target="_blank">联系我们</a> |
+            <a href="http://www.ymt.com/office" target="_blank">门店和办事处</a> |
+            <a href="http://m.ymt.com/" target="_blank">手机版网站</a> |
+            <a rel="nofollow" href="http://zixun.ymt.com/show-33-632807-1.html" target="_blank">法律声明</a> |
+            <a rel="nofollow" href="http://zixun.ymt.com/show-33-632810-1.html" target="_blank">隐私声明</a> |
+            <a rel="nofollow" href="http://zixun.ymt.com/show-33-632808-1.html" target="_blank">服务条款</a>
+        </div>
+        <div class="c-line2">© 北京一亩田新农网络科技有限公司 1997 - 2015</div>
+        <div class="c-line3">京ICP证150359号  公安局备案编号：京公网安备11010802010830号</div>
+    </div>
+</div>
+
+<div id="success_msg" class="tab-entrust-layer layer">
+    <div class="title">
+        <div class="fl"></div>
+        <a class="close" rel="nofollow" href="http://www.ymt.com/###">&nbsp;</a>
+    </div>
+    <div class="con">
+        <div class="contact-way success_status"></div>
+    </div>
+</div>
+<span class="ymt-qrcode" data-value="http://img.yimutian.com/qrcode/Qmi8CgglmfAFO1EgW0tykfWD2n5AtSFIm-MA3KtS6dzPM6b2jtlItl7gXiMd_tlp0fDQE4CBdEkv0a_rhZhccA...png?v=201508291850"></span>
+<script type="text/javascript">
+    var require = { urlArgs: "v=201508291850" }
+</script>
+<script src="__PUBLIC__/js/require.js" data-main="http://s.yimutian.com/ymt/js/main"></script>
+<script src="__PUBLIC__/js/h.js" type="text/javascript"></script>
+
+
+<div style="z-index: 99999; position: absolute; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-style: none solid solid; border-right-color: rgb(254, 199, 76); border-bottom-color: rgb(254, 199, 76); border-left-color: rgb(254, 199, 76); top: 171px; left: 551.5px; width: 278px; display: none; background: rgb(255, 255, 255);"></div>
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="__PUBLIC__/js/main.js"></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="__PUBLIC__/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ymt" src="__PUBLIC__/js/ymt.js"></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="entrust" src="__PUBLIC__/js/entrust.js"></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mar" src="__PUBLIC__/js/mar.js"></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dialog" src="__PUBLIC__/js/dialog.js"></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="placeholder" src="__PUBLIC__/js/jquery.placeholder.js"></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tracker" src="__PUBLIC__/js/js_tracker.min.js"></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="cookie" src="__PUBLIC__/js/jquery.cookie.js"></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="home" src="__PUBLIC__/js/home.js"></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tab" src="__PUBLIC__/js/tab.js"></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="menu-aim" src="__PUBLIC__/js/jquery.menu-aim.js"></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="map" src=".__PUBLIC__/js/map.js"></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="traffic" src="__PUBLIC__/js/traffic.js"></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bmap" src="__PUBLIC__/js/getscript"></script>
+</body>
+</html>

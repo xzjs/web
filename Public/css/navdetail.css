@@ -1,0 +1,51 @@
+.navdetail {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 182px;
+  height: 553px;
+  width: 808px;
+  background: #FFFFFF;
+  border-bottom: 2px solid #03715D;
+  border-right: 2px solid #03715D; }
+  .navdetail dl {
+    width: 800px;
+    overflow: hidden;
+    padding: 6px 3px;
+    zoom: 1;
+    margin: auto; }
+    .navdetail dl dt {
+      float: left;
+      width: 60px;
+      text-align: right;
+      padding: 3px 6px 0 0;
+      overflow: hidden;
+      font-weight: bold;
+      font-size: 12px;
+      color: #E4393C; }
+    .navdetail dl dd {
+      height: 24px;
+      line-height: 24px;
+      overflow: hidden;
+      padding: 3px 2px 3px 20px;
+      float: left;
+      width: 90px; }
+      .navdetail dl dd em {
+        font-style: normal;
+        padding: 0 6px;
+        height: 14px;
+        line-height: 14px;
+        float: left;
+        margin: 4px 0; }
+        .navdetail dl dd em a {
+          font-size: 14px;
+          color: #666;
+          white-space: nowrap;
+          text-decoration: none; }
+          .navdetail dl dd em a.last {
+            color: #E4393C; }
+  .navdetail.on {
+    display: block;
+    left: 182px; }
+
+/*# sourceMappingURL=navdetail.css.map */

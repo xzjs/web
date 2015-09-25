@@ -1,0 +1,17 @@
+.content-new {
+  width: 990px;
+  height: auto;
+  margin: 0 auto 10px;
+  position: relative; }
+  .content-new .topnav {
+    border-top: 2px solid #CFCFCF;
+    border-right: 2px solid #CFCFCF;
+    border-left: 2px solid #CFCFCF;
+    width: 988px;
+    height: auto;
+    background: #eeeeee; }
+    .content-new .topnav p {
+      padding: 10px 20px 10px 20px;
+      font-size: 16px; }
+
+/*# sourceMappingURL=content.css.map */
