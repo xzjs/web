@@ -6,7 +6,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta http-equiv="Cache-Control" content="no-siteapp">
-    <title>首页</title>
+    <title>{$title}</title>
     <meta http-equiv="mobile-agent" content="format=xhtml; url=http://m.ymt.com/">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/navlist.css">
@@ -21,11 +21,11 @@
     <div class="w990">
         <ul>
             <!--<li><a><img src="__PUBLIC__/img/logo.png" height="40px"></a></li>-->
-            <li><a href="__URL__/index">首页</a></li>
-            <li><a href="__URL__/productbuy">商品采购</a></li>
-            <li><a href="__URL__/supply">商品供应</a></li>
-            <li><a href="{:U('Today/index')}">今日行情</a></li>
-            <li><a href="__URL__/market">小微企业</a></li>
+            <li class="{$class1}"><a href="{:U('Index/index')}">首页</a></li>
+            <li class="{$class2}"><a href="{:U('Buy/index')}">商品采购</a></li>
+            <li class="{$class3}"><a href="{:U('Support/index')}">商品供应</a></li>
+            <li class="{$class4}"><a href="{:U('Today/index')}">今日行情</a></li>
+            <li class="{$class5}"><a href="{:U('Company/index')}">小微企业</a></li>
             <li><input type="text"></li>
             <li><a href="#">搜索</a></li>
         </ul>
@@ -34,8 +34,8 @@
                 <a rel="nofollow" id="btn-topnav-purchase-open" href="__URL__/register" class="sell">{$_SESSION['user'].email}</a>
                 <a rel="nofollow" href="__URL__/logout" class="sell" name="btn-topnav-supply-open">退出</a>
                 <else/>
-                <a rel="nofollow"  href="__URL__/register" class="sell">注册</a>
-                <a rel="nofollow" href="__URL__/login" class="sell" name="btn-topnav-supply-open">登录</a>
+                <a rel="nofollow" href="{:U('User/register')}" class="sell">注册</a>
+                <a rel="nofollow" href="{:U('User/login')}" class="sell" name="btn-topnav-supply-open">登录</a>
             </if>
         </div>
     </div>
@@ -46,7 +46,9 @@
         <div class="w450">
             <span class="w400">咨询联系专线：4008983008</span>
             <span class="w170">服务QQ：4008983008</span>
-            <a class="qq" rel="nofollow" id="footer-qq" target="_blank" href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODA3MDE4OF8xNTI2MDFfNDAwODk4MzAwOF8yXw"><img src="__PUBLIC__/qq_jt.png"></a>
+            <a class="qq" rel="nofollow" id="footer-qq" target="_blank"
+               href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODA3MDE4OF8xNTI2MDFfNDAwODk4MzAwOF8yXw"><img
+                    src="__PUBLIC__/qq_jt.png"></a>
         </div>
     </div>
     <div class="copyright">
@@ -60,7 +62,7 @@
             <a rel="nofollow" href="http://zixun.ymt.com/show-33-632808-1.html" target="_blank">服务条款</a>
         </div>
         <div class="c-line2">© 北京新农网络科技有限公司 1997 - 2015</div>
-        <div class="c-line3">京ICP证150359号  公安局备案编号：京公网安备11010802010830号</div>
+        <div class="c-line3">京ICP证150359号 公安局备案编号：京公网安备11010802010830号</div>
     </div>
 </div>
 
@@ -73,29 +75,30 @@
         <div class="contact-way success_status"></div>
     </div>
 </div>
-<span class="ymt-qrcode" data-value="http://img.yimutian.com/qrcode/Qmi8CgglmfAFO1EgW0tykfWD2n5AtSFIm-MA3KtS6dzPM6b2jtlItl7gXiMd_tlp0fDQE4CBdEkv0a_rhZhccA...png?v=201508291850"></span>
+<span class="ymt-qrcode"
+      data-value="http://img.yimutian.com/qrcode/Qmi8CgglmfAFO1EgW0tykfWD2n5AtSFIm-MA3KtS6dzPM6b2jtlItl7gXiMd_tlp0fDQE4CBdEkv0a_rhZhccA...png?v=201508291850"></span>
 
 <script src="__PUBLIC__/js/jquery-1.11.0.min.js"></script>
 <script src="__PUBLIC__/js/public.js"></script>
 <script type="text/javascript">
-    var require = { urlArgs: "v=201508291850" }
+    var require = {urlArgs: "v=201508291850"}
 </script>
 <script src="__PUBLIC__/js/require.js"></script>
 <script src="__PUBLIC__/js/h.js"></script>
-<script  src="__PUBLIC__/js/main.js"></script>
+<script src="__PUBLIC__/js/main.js"></script>
 
 
-<script  src="__PUBLIC__/js/ymt.js"></script>
-<script  src="__PUBLIC__/js/entrust.js"></script>
-<script  src="__PUBLIC__/js/mar.js"></script>
-<script  src="__PUBLIC__/js/dialog.js"></script>
-<script  src="__PUBLIC__/js/jquery.placeholder.js"></script>
-<script  src="__PUBLIC__/js/js_tracker.min.js"></script>
-<script  src="__PUBLIC__/js/jquery.cookie.js"></script>
-<script  src="__PUBLIC__/js/home.js"></script>
-<script  src="__PUBLIC__/js/tab.js"></script>
-<script  src="__PUBLIC__/js/jquery.menu-aim.js"></script>
-<script  src=".__PUBLIC__/js/map.js"></script>
+<script src="__PUBLIC__/js/ymt.js"></script>
+<script src="__PUBLIC__/js/entrust.js"></script>
+<script src="__PUBLIC__/js/mar.js"></script>
+<script src="__PUBLIC__/js/dialog.js"></script>
+<script src="__PUBLIC__/js/jquery.placeholder.js"></script>
+<script src="__PUBLIC__/js/js_tracker.min.js"></script>
+<script src="__PUBLIC__/js/jquery.cookie.js"></script>
+<script src="__PUBLIC__/js/home.js"></script>
+<script src="__PUBLIC__/js/tab.js"></script>
+<script src="__PUBLIC__/js/jquery.menu-aim.js"></script>
+<script src=".__PUBLIC__/js/map.js"></script>
 <script src="__PUBLIC__/js/bootstrap.min.js"></script>
 
 </body>

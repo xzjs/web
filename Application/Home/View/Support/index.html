@@ -1,13 +1,321 @@
 <div class="content">
-    <div class="release-area">
-        <div class="release-hd">
-            <div class="rh-title">
-                <span class="rh-title-l">免费发布供应信息</span>
-                <span class="rh-title-r"></span>
+    <div class="shuju-hot fl">
+        <div class="screening_box">
+            <div class="product_box">
+                <div class="tit">产业：</div>
+                <div class="main">
+                    <ul class="row_1">
+                        <li class="active"><a id="c0" ref="nofollow"
+                                              href="javascript:void(0);"
+                                              onclick="category(c0)">全部</a><i>已选中</i></li>
+
+                        <volist name="list" id="vo">
+                            <li><a id="c{$vo.id}" href="javascript:void(0);"
+                                   onclick="category(c{$vo.id})">{$vo.name}</a></li>
+                        </volist>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="region_box">
+                <div class="tit">地区：</div>
+                <div class="main">
+                    <ul class="row_1">
+                        <li class="active"><a id="p0" href="javascript:void(0);" onclick="category(p0)">全国</a><i>已选中</i>
+                        </li>
+                        <volist name="province_list" id="province">
+                            <li><a id="p{$province.id}" href="javascript:void(0);" onclick="category(p{$province.id})">{$province.name}</a>
+                            </li>
+                        </volist>
+                    </ul>
+                </div>
+            </div>
+            <div class="product_box pt8">
+                <div class="tit">类别：</div>
+                <div class="main">
+                    <ul class="row_1">
+                        <li class="active"><a id="t0" href="javascript:void(0);"
+                                              onclick="category(t0)">全部行情</a><i>已选中</i>
+                        </li>
+                        <volist name="type_list" id="type">
+                            <li><a id="t{$type.id}" href="javascript:void(0);" onclick="category(t{$type.id})">{$type.name}</a>
+                            </li>
+                        </volist>
+                    </ul>
+                </div>
+            </div>
+            <div class="route" data-max="0" style="display:none">
+                <div class="r_tit">您现在的拉货路线是？</div>
+                <div class="route_area">
+                    <span class="text_1">从</span>
+
+                    <div class="route_box" id="origin_route_box">
+                        <div class="text">
+                            <div class="fl_tit tit-1" data-level="1">请选择产地</div>
+                            <em></em>
+                        </div>
+                        <div class="ceng" id="origin_ceng">
+                            <div class="c_box">
+                                <div class="hd">
+                                    <ul class="hd_tab">
+                                        <li>
+                                            <a href="http://hangqing.ymt.com/###" class="hover" id="ori_hd_tab_fir">
+                                                <span class="addr hd-level-1" data-level="1" data-value="0">请选择</span>
+                                                <i></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://hangqing.ymt.com/###" class="" id="ori_hd_tab_sec">
+                                                <span class="addr hd-level-2" data-level="2" data-value="0">请选择</span>
+                                                <i></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://hangqing.ymt.com/###" class="" id="ori_hd_tab_thr">
+                                                <span class="addr hd-level-3" data-level="3" data-value="0">请选择</span>
+                                                <i></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bd_mc bd_mc_level_1" style="display:block;" id="ori_province_select">
+                                    <ul class="area_box">
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="1"
+                                               class="bd_mc_pro_li">北京</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="4"
+                                               class="bd_mc_pro_li">重庆</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="5"
+                                               class="bd_mc_pro_li">河北</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="6"
+                                               class="bd_mc_pro_li">山西</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="7"
+                                               class="bd_mc_pro_li">内蒙古</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="8"
+                                               class="bd_mc_pro_li">辽宁</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="9"
+                                               class="bd_mc_pro_li">吉林</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="10"
+                                               class="bd_mc_pro_li">黑龙江</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="11"
+                                               class="bd_mc_pro_li">江苏</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="12"
+                                               class="bd_mc_pro_li">浙江</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="13"
+                                               class="bd_mc_pro_li">安徽</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="14"
+                                               class="bd_mc_pro_li">福建</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="15"
+                                               class="bd_mc_pro_li">江西</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="16"
+                                               class="bd_mc_pro_li">山东</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="17"
+                                               class="bd_mc_pro_li">河南</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="18"
+                                               class="bd_mc_pro_li">湖北</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="19"
+                                               class="bd_mc_pro_li">湖南</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="20"
+                                               class="bd_mc_pro_li">广东</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="21"
+                                               class="bd_mc_pro_li">广西</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="22"
+                                               class="bd_mc_pro_li">海南</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="23"
+                                               class="bd_mc_pro_li">四川</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="24"
+                                               class="bd_mc_pro_li">贵州</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="25"
+                                               class="bd_mc_pro_li">云南</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="27"
+                                               class="bd_mc_pro_li">陕西</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="28"
+                                               class="bd_mc_pro_li">甘肃</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="29"
+                                               class="bd_mc_pro_li">青海</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="30"
+                                               class="bd_mc_pro_li">宁夏</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="31"
+                                               class="bd_mc_pro_li">新疆</a></li>
+                                    </ul>
+                                </div>
+                                <div class="bd_mc bd_mc_level_2" style="display:none;" id="ori_city_select">
+                                </div>
+                                <div class="bd_mc bd_mc_level_3" style="display:none;" id="ori_count_select">
+                                </div>
+                            </div>
+                        </div>
+                        <a href="http://hangqing.ymt.com/###" class="close" style="display:none;" id="close_mb_1"></a>
+                    </div>
+                    <span class="text_1">到</span>
+
+                    <div class="route_box" id="market_route_box">
+                        <div class="text">
+                            <div class="fl_tit tit-4" data-level="4">请选择市场</div>
+                            <em></em>
+                        </div>
+                        <div class="ceng">
+                            <div class="c_box">
+                                <div class="hd">
+                                    <ul class="hd_tab">
+                                        <li>
+                                            <a href="http://hangqing.ymt.com/###" class="hover" id="mar_hd_tab_fir">
+                                                <span class="addr hd-level-4" data-value="0" data-level="4">请选择</span>
+                                                <i></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://hangqing.ymt.com/###" class="" id="mar_hd_tab_sec">
+                                                <span class="addr hd-level-5" data-value="0" data-level="5">请选择</span>
+                                                <i></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bd_mc bd_mc_level_4" style="display:block;" id="mar_province_select">
+                                    <ul class="area_box">
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="1" data-level="4"
+                                               class="bd_mc_pro_li">北京</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="4" data-level="4"
+                                               class="bd_mc_pro_li">重庆</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="5" data-level="4"
+                                               class="bd_mc_pro_li">河北</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="6" data-level="4"
+                                               class="bd_mc_pro_li">山西</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="7" data-level="4"
+                                               class="bd_mc_pro_li">内蒙古</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="8" data-level="4"
+                                               class="bd_mc_pro_li">辽宁</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="9" data-level="4"
+                                               class="bd_mc_pro_li">吉林</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="10" data-level="4"
+                                               class="bd_mc_pro_li">黑龙江</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="11" data-level="4"
+                                               class="bd_mc_pro_li">江苏</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="12" data-level="4"
+                                               class="bd_mc_pro_li">浙江</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="13" data-level="4"
+                                               class="bd_mc_pro_li">安徽</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="14" data-level="4"
+                                               class="bd_mc_pro_li">福建</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="15" data-level="4"
+                                               class="bd_mc_pro_li">江西</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="16" data-level="4"
+                                               class="bd_mc_pro_li">山东</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="17" data-level="4"
+                                               class="bd_mc_pro_li">河南</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="18" data-level="4"
+                                               class="bd_mc_pro_li">湖北</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="19" data-level="4"
+                                               class="bd_mc_pro_li">湖南</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="20" data-level="4"
+                                               class="bd_mc_pro_li">广东</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="21" data-level="4"
+                                               class="bd_mc_pro_li">广西</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="22" data-level="4"
+                                               class="bd_mc_pro_li">海南</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="23" data-level="4"
+                                               class="bd_mc_pro_li">四川</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="24" data-level="4"
+                                               class="bd_mc_pro_li">贵州</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="25" data-level="4"
+                                               class="bd_mc_pro_li">云南</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="27" data-level="4"
+                                               class="bd_mc_pro_li">陕西</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="28" data-level="4"
+                                               class="bd_mc_pro_li">甘肃</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="29" data-level="4"
+                                               class="bd_mc_pro_li">青海</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="30" data-level="4"
+                                               class="bd_mc_pro_li">宁夏</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="31" data-level="4"
+                                               class="bd_mc_pro_li">新疆</a></li>
+                                    </ul>
+                                </div>
+                                <div class="bd_mc bd_mc_level_5" style="display:none;" id="mar_city_select">
+                                </div>
+                            </div>
+                        </div>
+                        <a href="http://hangqing.ymt.com/###" class="close" style="display:none;" id="close_mb_2"></a>
+                    </div>
+
+                </div>
+                <a href="http://hangqing.ymt.com/###" class="smallbtn" id="smallbtn_con">确定</a>
+
+                <div class="clear"></div>
             </div>
         </div>
-        <div class="release-bd">
+        <div class="sift">
+            <ul class="sift-tab">
+                <li><a href="http://www.ymt.com/gongying" rel="nofollow" class="w108 active" name="supply_sflag_all">最新需求信息</a>
+                </li>
+            </ul>
+            <a rel="nofollow" name="supply_btn_supply" href="{:U('Support/add')}"
+               class="publish-btn">发布需求</a>
+        </div>
+        <div class="goods">
+            <div class="g-table-box">
+                <ul class="table-box-tit">
+                    <li class="w150">报价时间</li>
+                    <li class="w150">需求市场</li>
+                    <li class="w110">品种</li>
+                    <li class="w160">规格</li>
+                    <li class="w110">数量(公斤)</li>
+                    <li class="w110">经纪人</li>
+                </ul>
 
+                <ul class="table-box-con">
+                    <volist name="support_list" id="support">
+                        <li>
+                            <a id="supply_0_50708115" name="supply_0_50708115" class="wrap"
+                               href="#" target="_blank">
+                                <div class="row-one">
+                                    <span class="text w150">
+                                        {$support.time|date='Y-m-d',###}
+                                    </span>
+                                    <span class="text w150 ">
+                                        {$support.market}                               &nbsp;
+                                    </span>
+                                    <span class="text w110">
+                                        {$support.type}
+                                    </span>
+                                    <span class="text3 w160 spec-info">
+                                        {$support.size}
+                                    </span>
+                                    <span class="text w110">
+                                        {$support.num}
+                                    </span>
+                                    <span class="text w110">
+                                        {$support.agent}
+                                    </span>
+
+                                    <div class="btn">
+
+                                        <span id="supply-view-50708115" class="view-btn">详情</span>
+
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+
+        <div class="clear">
         </div>
     </div>
+
+    <div class="clear"></div>
+    <div class="clear"></div>
 </div>
+<script>
+    function category(id) {
+        $(id).parent().siblings().filter(".active").removeClass("active");
+        $(id).parent().addClass("active");
+    }
+</script>

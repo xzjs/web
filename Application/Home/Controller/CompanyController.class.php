@@ -2,24 +2,25 @@
 /**
  * Created by PhpStorm.
  * User: xzjs
- * Date: 15/11/8
- * Time: 上午10:43
+ * Date: 15/11/9
+ * Time: 下午5:34
  */
 namespace Home\Controller;
 
 use Think\Controller;
 
-class TodayController extends Controller
+class CompanyController extends Controller
 {
     /**
-     * 今日行情首页
+     * 小微企业首页
      */
     public function index(){
         $this->pre_list();
-        $Today=D('Today');
-        $this->assign('today_list',$Today->relation(true)->select());
-        $News=A('News');
-        $this->assign('news_list',$News->_list());
+        $Province=A('Province');
+        $this->assign('province_list',$Province->_list());
+
+        $Company=M('Company');
+        $this->assign('today_list',$Company->select());
         $this->show();
     }
 
@@ -27,8 +28,8 @@ class TodayController extends Controller
      * 为页面准备标题,列表
      */
     private function pre_list(){
-        $this->assign('title','今日行情');
-        $this->assign('class4','active');
+        $this->assign('title','小微企业');
+        $this->assign('class5','active');
         $Category=A('Category');
         $this->assign('list',$Category->_list());
         $Province=A('Province');
@@ -43,7 +44,7 @@ class TodayController extends Controller
      * @return mixed 获得的数据数组
      */
     public function _list($num){
-        $Today=D('Today');
-        return $Today->order('time desc')->limit($num)->select();
+        $Company=D('Company');
+        return $Company->order('time desc')->limit($num)->select();
     }
 }

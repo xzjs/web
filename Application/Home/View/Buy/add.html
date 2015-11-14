@@ -1,0 +1,77 @@
+<div class="content">
+    <div class="release-area">
+        <div class="release-hd">
+            <div class="rh-title">
+                <span class="rh-title-l">免费发布供应信息</span>
+                <span class="rh-title-r">温馨提示：填写规范的信息能够被更多供应商看到</span>
+            </div>
+        </div>
+        <div class="release-bd">
+            <form action="{:U('Buy/addx')}" method="post" accept-charset="utf-8" id="form-publish">
+                <div class="section" id="sec-prod">
+                    <div class="r-product">
+                        <div class="tit"><i class="asterisk">*</i>要供应的产品品种
+                        </div>
+                        <div class="con">
+                            <input id="product-name" name="type" type="text" class="tex" placeholder="请输入1个产品名称，如：西瓜">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="release_box">
+                        <div class="con">
+                            <div class="item" id="sel-pos">
+                                <label><i class="asterisk">*</i>地区</label>
+                                <select class="sel w sel-province" name="province_id">
+                                    <volist name="province_list" id="vo">
+                                        <option value="{$vo.id}">{$vo.name}</option>
+                                    </volist>
+                                </select>
+                            </div>
+                            <div class="item">
+                                <label><i class="asterisk">*</i>产业</label>
+                                <select class="sel w sel-province" name="category_id">
+                                    <volist name="list" id="vo">
+                                        <option value="{$vo.id}">{$vo.name}</option>
+                                    </volist>
+                                </select>
+                            </div>
+                            <div class="item">
+                                <label><i class="asterisk">*</i>类别</label>
+                                <select class="sel w sel-province" name="type_id">
+                                    <volist name="type_list" id="vo">
+                                        <option value="{$vo.id}">{$vo.name}</option>
+                                    </volist>
+                                </select>
+                            </div>
+                            <div class="item">
+                                <label><i class="asterisk ml20">*</i>需求市场</label>
+                                <input name="market" id="volume" type="text" class="tex">
+                            </div>
+                            <div class="item">
+                                <label><i class="asterisk ml20">*</i>价格</label>
+                                <input name="price" type="text" class="tex">元
+                            </div>
+                            <div class="item">
+                                <label><i class="asterisk ml20">*</i>规格</label>
+                                <input name="size" type="text" class="tex">
+                            </div>
+                            <div class="item">
+                                <label><i class="asterisk ml20">*</i>经纪人</label>
+                                <input name="agent" type="text" class="tex">
+                            </div>
+                            <div class="item">
+                                <label><i class="asterisk ml20">*</i>电话</label>
+                                <input name="phone" type="text" class="tex">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="confirm">
+                        <div class="release">
+                            <input type="submit" class="bigbtn" value="确定发布">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

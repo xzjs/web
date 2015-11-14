@@ -1,146 +1,33 @@
 <div class="content">
-
     <div class="shuju-hot fl">
         <div class="screening_box">
             <div class="product_box">
                 <div class="tit">产业：</div>
                 <div class="main">
                     <ul class="row_1">
-                        <li id="l0"><a id="hq-cid1-all" ref="nofollow" href="">全部</a><i>已选中</i></li>
+                        <li class="active"><a id="c0" ref="nofollow"
+                                              href="javascript:void(0);"
+                                              onclick="category(c0)">全部</a><i>已选中</i></li>
 
-                        <volist name="categorylist" id="vo">
-                            <li id="l{$vo.id}"><a  href="">{$vo.name}</a></li>
+                        <volist name="list" id="vo">
+                            <li><a id="c{$vo.id}" href="javascript:void(0);"
+                                   onclick="category(c{$vo.id})">{$vo.name}</a></li>
                         </volist>
+
+
                     </ul>
-                </div>
-            </div>
-            <div class="product2_box">
-                <div class="line-one">
-                    <ul class="row_3">
-                        <li class="active"><a id="hq-product-all" href="http://hangqing.ymt.com/?type=all&show=all#here">全部</a><i>已选中</i></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p7298#here">大葱</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p7107#here">白菜</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p7710#here">红薯</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p7741#here">胡萝卜</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p8199#here">苹果</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p7277#here">脐橙</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p8031#here">梨</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p7252#here">草莓</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p11444#here">银杏树</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p11232#here">栾树</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p11215#here">槐树</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p11196#here">红叶李</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p306146#here">桂花</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p11586#here">蝴蝶兰</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p19410#here">兰花</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p306355#here">富贵竹</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p306960#here">柿饼</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p7645#here">核桃</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p8012#here">葵花籽</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p7731#here">红枣</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p9878#here">肉羊</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p9883#here">肉牛</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p9894#here">仔猪</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p10971#here">牛犊</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p21433#here">竹鼠</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p19718#here">土元</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p306660#here">山鸡</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p19296#here">貂皮</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p8451#here">香菇</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p8153#here">木耳</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p7184#here">杏鲍菇</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p8198#here">平菇</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p306690#here">药用天麻</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p9775#here">药用金银花</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p10651#here">黄连</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p19709#here">药用葛根</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p7253#here">草鱼</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p8160#here">泥鳅</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p8351#here">梭子蟹</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p40784#here">鳖</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p8534#here">玉米</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p7774#here">花生米</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p7361#here">大米</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p8470#here">小米</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p469778#here">松木杆</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p469620#here">苏氨酸渣</a></li>
-                        <li class=""><a id="" href="http://hangqing.ymt.com/dianping/p469613#here">赖氨酸渣</a></li>
-                        <li class=" mr0 "><a id="" href="http://hangqing.ymt.com/dianping/p281006#here">农机</a></li>
-                    </ul>
-                </div>
-                <div class="line-two hide">
-                    <ul class="zm hide" data-record-id="">
-                        <li><a href="http://hangqing.ymt.com/###">A</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">B</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">C</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">D</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">E</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">F</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">G</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">H</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">I</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">J</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">K</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">L</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">M</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">N</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">O</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">P</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">Q</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">R</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">S</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">T</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">U</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">V</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">W</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">X</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">Y</a></li>
-                        <li><a href="http://hangqing.ymt.com/###">Z</a></li>
-                    </ul>
-                    <ul class="row_4 pysearch hide">
-                    </ul>
-                </div>
-                <div class="search-area2">
-                    <input type="text" id="product-name" class="s2-text" placeholder="搜索产品或品种名，如：西瓜">
-                    <a href="http://hangqing.ymt.com/###" rel="nofollow" id="hq-product-search" class="s2-btn">搜索</a>
-                </div>
-                <div class="option">
-                    <a href="http://hangqing.ymt.com/###" rel="nofollow" id="hq-product-more" class="more_btn_2 fold">更多</a>
                 </div>
             </div>
             <div class="region_box">
                 <div class="tit">地区：</div>
                 <div class="main">
                     <ul class="row_1">
-                        <li class="active"><a id="hq-location-all" href="http://hangqing.ymt.com/#here">全国</a><i>已选中</i></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/1?type=all#here">北京</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/4?type=all#here">重庆</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/5?type=all#here">河北</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/6?type=all#here">山西</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/7?type=all#here">内蒙古</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/8?type=all#here">辽宁</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/9?type=all#here">吉林</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/10?type=all#here">黑龙江</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/11?type=all#here">江苏</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/12?type=all#here">浙江</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/13?type=all#here">安徽</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/14?type=all#here">福建</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/15?type=all#here">江西</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/16?type=all#here">山东</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/17?type=all#here">河南</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/18?type=all#here">湖北</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/19?type=all#here">湖南</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/20?type=all#here">广东</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/21?type=all#here">广西</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/22?type=all#here">海南</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/23?type=all#here">四川</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/24?type=all#here">贵州</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/25?type=all#here">云南</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/27?type=all#here">陕西</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/28?type=all#here">甘肃</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/29?type=all#here">青海</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/30?type=all#here">宁夏</a></li>
-                        <li><a id="" href="http://hangqing.ymt.com/dianping/31?type=all#here">新疆</a></li>
+                        <li class="active"><a id="p0" href="javascript:void(0);" onclick="category(p0)">全国</a><i>已选中</i>
+                        </li>
+                        <volist name="province_list" id="province">
+                            <li><a id="p{$province.id}" href="javascript:void(0);" onclick="category(p{$province.id})">{$province.name}</a>
+                            </li>
+                        </volist>
                     </ul>
                 </div>
             </div>
@@ -148,9 +35,13 @@
                 <div class="tit">类别：</div>
                 <div class="main">
                     <ul class="row_1">
-                        <li class="active"><a id="hq-market-type" href="http://hangqing.ymt.com/?type=all#here">全部行情</a><i>已选中</i></li>
-                        <li><a id="hq-market-type" href="http://hangqing.ymt.com/?type=origin#here">产地行情</a></li>
-                        <li><a id="hq-market-type" href="http://hangqing.ymt.com/?type=market#here">批发市场行情</a></li>
+                        <li class="active"><a id="t0" href="javascript:void(0);"
+                                              onclick="category(t0)">全部行情</a><i>已选中</i>
+                        </li>
+                        <volist name="type_list" id="type">
+                            <li><a id="t{$type.id}" href="javascript:void(0);" onclick="category(t{$type.id})">{$type.name}</a>
+                            </li>
+                        </volist>
                     </ul>
                 </div>
             </div>
@@ -158,6 +49,7 @@
                 <div class="r_tit">您现在的拉货路线是？</div>
                 <div class="route_area">
                     <span class="text_1">从</span>
+
                     <div class="route_box" id="origin_route_box">
                         <div class="text">
                             <div class="fl_tit tit-1" data-level="1">请选择产地</div>
@@ -189,34 +81,62 @@
                                 </div>
                                 <div class="bd_mc bd_mc_level_1" style="display:block;" id="ori_province_select">
                                     <ul class="area_box">
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="1" class="bd_mc_pro_li">北京</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="4" class="bd_mc_pro_li">重庆</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="5" class="bd_mc_pro_li">河北</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="6" class="bd_mc_pro_li">山西</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="7" class="bd_mc_pro_li">内蒙古</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="8" class="bd_mc_pro_li">辽宁</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="9" class="bd_mc_pro_li">吉林</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="10" class="bd_mc_pro_li">黑龙江</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="11" class="bd_mc_pro_li">江苏</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="12" class="bd_mc_pro_li">浙江</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="13" class="bd_mc_pro_li">安徽</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="14" class="bd_mc_pro_li">福建</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="15" class="bd_mc_pro_li">江西</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="16" class="bd_mc_pro_li">山东</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="17" class="bd_mc_pro_li">河南</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="18" class="bd_mc_pro_li">湖北</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="19" class="bd_mc_pro_li">湖南</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="20" class="bd_mc_pro_li">广东</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="21" class="bd_mc_pro_li">广西</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="22" class="bd_mc_pro_li">海南</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="23" class="bd_mc_pro_li">四川</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="24" class="bd_mc_pro_li">贵州</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="25" class="bd_mc_pro_li">云南</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="27" class="bd_mc_pro_li">陕西</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="28" class="bd_mc_pro_li">甘肃</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="29" class="bd_mc_pro_li">青海</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="30" class="bd_mc_pro_li">宁夏</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="31" class="bd_mc_pro_li">新疆</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="1"
+                                               class="bd_mc_pro_li">北京</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="4"
+                                               class="bd_mc_pro_li">重庆</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="5"
+                                               class="bd_mc_pro_li">河北</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="6"
+                                               class="bd_mc_pro_li">山西</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="7"
+                                               class="bd_mc_pro_li">内蒙古</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="8"
+                                               class="bd_mc_pro_li">辽宁</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="9"
+                                               class="bd_mc_pro_li">吉林</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="10"
+                                               class="bd_mc_pro_li">黑龙江</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="11"
+                                               class="bd_mc_pro_li">江苏</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="12"
+                                               class="bd_mc_pro_li">浙江</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="13"
+                                               class="bd_mc_pro_li">安徽</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="14"
+                                               class="bd_mc_pro_li">福建</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="15"
+                                               class="bd_mc_pro_li">江西</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="16"
+                                               class="bd_mc_pro_li">山东</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="17"
+                                               class="bd_mc_pro_li">河南</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="18"
+                                               class="bd_mc_pro_li">湖北</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="19"
+                                               class="bd_mc_pro_li">湖南</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="20"
+                                               class="bd_mc_pro_li">广东</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="21"
+                                               class="bd_mc_pro_li">广西</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="22"
+                                               class="bd_mc_pro_li">海南</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="23"
+                                               class="bd_mc_pro_li">四川</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="24"
+                                               class="bd_mc_pro_li">贵州</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="25"
+                                               class="bd_mc_pro_li">云南</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="27"
+                                               class="bd_mc_pro_li">陕西</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="28"
+                                               class="bd_mc_pro_li">甘肃</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="29"
+                                               class="bd_mc_pro_li">青海</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="30"
+                                               class="bd_mc_pro_li">宁夏</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-level="1" data-value="31"
+                                               class="bd_mc_pro_li">新疆</a></li>
                                     </ul>
                                 </div>
                                 <div class="bd_mc bd_mc_level_2" style="display:none;" id="ori_city_select">
@@ -228,6 +148,7 @@
                         <a href="http://hangqing.ymt.com/###" class="close" style="display:none;" id="close_mb_1"></a>
                     </div>
                     <span class="text_1">到</span>
+
                     <div class="route_box" id="market_route_box">
                         <div class="text">
                             <div class="fl_tit tit-4" data-level="4">请选择市场</div>
@@ -253,34 +174,62 @@
                                 </div>
                                 <div class="bd_mc bd_mc_level_4" style="display:block;" id="mar_province_select">
                                     <ul class="area_box">
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="1" data-level="4" class="bd_mc_pro_li">北京</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="4" data-level="4" class="bd_mc_pro_li">重庆</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="5" data-level="4" class="bd_mc_pro_li">河北</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="6" data-level="4" class="bd_mc_pro_li">山西</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="7" data-level="4" class="bd_mc_pro_li">内蒙古</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="8" data-level="4" class="bd_mc_pro_li">辽宁</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="9" data-level="4" class="bd_mc_pro_li">吉林</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="10" data-level="4" class="bd_mc_pro_li">黑龙江</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="11" data-level="4" class="bd_mc_pro_li">江苏</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="12" data-level="4" class="bd_mc_pro_li">浙江</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="13" data-level="4" class="bd_mc_pro_li">安徽</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="14" data-level="4" class="bd_mc_pro_li">福建</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="15" data-level="4" class="bd_mc_pro_li">江西</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="16" data-level="4" class="bd_mc_pro_li">山东</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="17" data-level="4" class="bd_mc_pro_li">河南</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="18" data-level="4" class="bd_mc_pro_li">湖北</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="19" data-level="4" class="bd_mc_pro_li">湖南</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="20" data-level="4" class="bd_mc_pro_li">广东</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="21" data-level="4" class="bd_mc_pro_li">广西</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="22" data-level="4" class="bd_mc_pro_li">海南</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="23" data-level="4" class="bd_mc_pro_li">四川</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="24" data-level="4" class="bd_mc_pro_li">贵州</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="25" data-level="4" class="bd_mc_pro_li">云南</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="27" data-level="4" class="bd_mc_pro_li">陕西</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="28" data-level="4" class="bd_mc_pro_li">甘肃</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="29" data-level="4" class="bd_mc_pro_li">青海</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="30" data-level="4" class="bd_mc_pro_li">宁夏</a></li>
-                                        <li><a href="http://hangqing.ymt.com/###" data-value="31" data-level="4" class="bd_mc_pro_li">新疆</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="1" data-level="4"
+                                               class="bd_mc_pro_li">北京</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="4" data-level="4"
+                                               class="bd_mc_pro_li">重庆</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="5" data-level="4"
+                                               class="bd_mc_pro_li">河北</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="6" data-level="4"
+                                               class="bd_mc_pro_li">山西</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="7" data-level="4"
+                                               class="bd_mc_pro_li">内蒙古</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="8" data-level="4"
+                                               class="bd_mc_pro_li">辽宁</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="9" data-level="4"
+                                               class="bd_mc_pro_li">吉林</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="10" data-level="4"
+                                               class="bd_mc_pro_li">黑龙江</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="11" data-level="4"
+                                               class="bd_mc_pro_li">江苏</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="12" data-level="4"
+                                               class="bd_mc_pro_li">浙江</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="13" data-level="4"
+                                               class="bd_mc_pro_li">安徽</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="14" data-level="4"
+                                               class="bd_mc_pro_li">福建</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="15" data-level="4"
+                                               class="bd_mc_pro_li">江西</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="16" data-level="4"
+                                               class="bd_mc_pro_li">山东</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="17" data-level="4"
+                                               class="bd_mc_pro_li">河南</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="18" data-level="4"
+                                               class="bd_mc_pro_li">湖北</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="19" data-level="4"
+                                               class="bd_mc_pro_li">湖南</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="20" data-level="4"
+                                               class="bd_mc_pro_li">广东</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="21" data-level="4"
+                                               class="bd_mc_pro_li">广西</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="22" data-level="4"
+                                               class="bd_mc_pro_li">海南</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="23" data-level="4"
+                                               class="bd_mc_pro_li">四川</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="24" data-level="4"
+                                               class="bd_mc_pro_li">贵州</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="25" data-level="4"
+                                               class="bd_mc_pro_li">云南</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="27" data-level="4"
+                                               class="bd_mc_pro_li">陕西</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="28" data-level="4"
+                                               class="bd_mc_pro_li">甘肃</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="29" data-level="4"
+                                               class="bd_mc_pro_li">青海</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="30" data-level="4"
+                                               class="bd_mc_pro_li">宁夏</a></li>
+                                        <li><a href="http://hangqing.ymt.com/###" data-value="31" data-level="4"
+                                               class="bd_mc_pro_li">新疆</a></li>
                                     </ul>
                                 </div>
                                 <div class="bd_mc bd_mc_level_5" style="display:none;" id="mar_city_select">
@@ -292,1417 +241,83 @@
 
                 </div>
                 <a href="http://hangqing.ymt.com/###" class="smallbtn" id="smallbtn_con">确定</a>
+
                 <div class="clear"></div>
             </div>
 
         </div>
 
-        <div class="update_see">
-            <span class="update">最新更新行情 <em>15233</em> 条</span>
+        <div class="sift">
+            <ul class="sift-tab">
+                <li><a href="http://www.ymt.com/gongying" rel="nofollow" class="w108 active" name="supply_sflag_all">最新供应信息</a>
+                </li>
+            </ul>
+            <a rel="nofollow" name="supply_btn_supply" href="{:U('Buy/add')}"
+               class="publish-btn">发布供应</a>
         </div>
-        <ul class="analysis_list_1">
-            <li>
-                <div class="row_1">
+        <div class="goods">
+            <div class="g-table-box">
+                <ul class="table-box-tit">
+                    <li class="w150">报价时间</li>
+                    <li class="w150">需求市场</li>
+                    <li class="w110">品种</li>
+                    <li class="w160">规格</li>
+                    <li class="w110">单价（元）</li>
+                    <li class="w110">经纪人</li>
+                </ul>
 
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p37930" class="name" id="quotation-related-title-0-0">砀山酥梨</a>                                        <div class="gui_box" id="rule_box_1287937">
-                        <span class="gb_text"> - <span class="click_tu">包装要求:光果</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            包装要求:光果<br>
-                            公母（仅限香梨选择）:不限<br>
-                            装箱规格:其他箱<br>
-                            单个果重:4-5两<br>
-                            果径:60mm以上<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 0.5~0.6元/斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/201939" target="_blank">陈信</a></span><a href="http://www.ymt.com/space/201939" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/201939" target="_blank"></a><a class="link" id="quotation-related-content-0-0" href="http://hangqing.ymt.com/dianping_1287937" target="_blank">砀山酥梨大量出售，4两左右每斤0.7元，4两以上每斤0.9元，半斤以上每斤1.1元，地址，安徽省砀山县，电话，18726275885。</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p37930_1393">
-                        安徽砀山县                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约352公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/201939" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：29分钟前</span>
-                    <span class="browse">阅读(8)</span>
-                    <span class="downbox"><a class="down-app" id="hangqing-app-1287937" target="_blank" href="http://www.ymt.com/intro/app?ref=hangqing_list">下载APP查看行情更方便</a></span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
+                <ul class="table-box-con">
+                    <volist name="buy_list" id="buy">
+                        <li>
+                            <a id="supply_0_50708115" name="supply_0_50708115" class="wrap"
+                               href="#" target="_blank">
+                                <div class="row-one">
+                                    <span class="text w150">
+                                        {$buy.time|date='Y-m-d',###}
+                                    </span>
+                                    <span class="text w150 ">
+                                        {$buy.market}                               &nbsp;
+                                    </span>
+                                    <span class="text w110">
+                                        {$buy.type}
+                                    </span>
+                                    <span class="text3 w160 spec-info">
+                                        {$buy.size}
+                                    </span>
+                                    <span class="text w110">
+                                        {$buy.price}
+                                    </span>
+                                    <span class="text w110">
+                                        {$buy.agent}
+                                    </span>
 
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p37930" class="name" id="quotation-related-title-0-1">砀山酥梨</a>                                        <div class="gui_box" id="rule_box_1287932">
-                        <span class="gb_text"> - <span class="click_tu">包装要求:光果</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            包装要求:光果<br>
-                            公母（仅限香梨选择）:不限<br>
-                            装箱规格:其他箱<br>
-                            单个果重:其他<br>
-                            果径:不限<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 0.7~0.8元/斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/201939" target="_blank">陈信</a></span><a href="http://www.ymt.com/space/201939" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/201939" target="_blank"></a><a class="link" id="quotation-related-content-0-1" href="http://hangqing.ymt.com/dianping_1287932" target="_blank">砀山酥梨大量出售，4两左右每斤0.7元，4两以上每斤0.9元，半斤以上每斤1.1元，地址，安徽省砀山县，电话，18726275885。</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p37930_1393">
-                        安徽砀山县                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约352公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/201939" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：29分钟前</span>
-                    <span class="browse">阅读(6)</span>
-                    <span class="downbox"><a class="down-app" id="hangqing-app-1287932" target="_blank" href="http://www.ymt.com/intro/app?ref=hangqing_list">下载APP查看行情更方便</a></span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
+                                    <div class="btn">
 
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p9932" class="name" id="quotation-related-title-0-2">白皮蒜</a>                                        <div class="gui_box" id="rule_box_1287893">
-                        <span class="gb_text"> - <span class="click_tu">皮颜色:白色</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            皮颜色:白色<br>
-                            瓣型:四六瓣<br>
-                            直径:大混级（5-7cm)<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 2.7~2.8元/斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/81793" target="_blank">孟总</a></span><a href="http://www.ymt.com/space/81793" target="_blank">
-                    </a><a target="_blank" class="user-reporter" href="http://www.ymt.com/zt/reporter?ref=hangqing"></a>
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </div>
-                </div>
-                <div class="row_2"><a class="link" id="quotation-related-content-0-2" href="http://hangqing.ymt.com/dianping_1287893" target="_blank">吉林白城常年盛产白皮蒜</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p9932_54296">
-                        吉林洮南市                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约1,034公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/81793" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：40分钟前</span>
-                    <span class="browse">阅读(3)</span>
-                    <span class="downbox"><a class="down-app" id="hangqing-app-1287893" target="_blank" href="http://www.ymt.com/intro/app?ref=hangqing_list">下载APP查看行情更方便</a></span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
+                                        <span id="supply-view-50708115" class="view-btn">详情</span>
 
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p46748" class="name" id="quotation-related-title-0-3">美国西芹</a>                                        <div class="gui_box" id="rule_box_1287750">
-                        <span class="gb_text"> - <span class="click_tu">杆长:60cm以上</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            杆长:60cm以上<br>
-                            单棵重:3两以上<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 0.45~0.55元/斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/557335" target="_blank"></a></span><a href="http://www.ymt.com/space/557335" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/557335" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/557335" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/557335" target="_blank"></a><a class="link" id="quotation-related-content-0-3" href="http://hangqing.ymt.com/dianping_1287750" target="_blank">德州禹城芹菜0.45到0.55元，货源充足，电话微信15169123018,</a></div>
-                <div class="row_3">
-                    <span class="enter-img">&nbsp;</span>
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p46748_1719?type=origin">
-                        山东禹城市                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约229公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/557335" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：2小时前</span>
-                    <span class="browse">阅读(13)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
 
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p7713" class="name" id="quotation-related-title-0-4">红提</a>                                        <div class="gui_box" id="rule_box_1287742">
-                        <span class="gb_text"> - <span class="click_tu">单串重:2斤以上</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            单串重:2斤以上<br>
-                            平均果径:18mm以上<br>
-                            小果率:1%以下<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 1.5元/公斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/511382" target="_blank">郭伟</a></span><a href="http://www.ymt.com/space/511382" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/511382" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/511382" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/511382" target="_blank"></a><a class="link" id="quotation-related-content-0-4" href="http://hangqing.ymt.com/dianping_1287742" target="_blank">陕西前几天连续3天的雨导致红提葡萄价格有所下滑，这两天等待的客商都进入了装车模式，未来三天后又是雨，抓住这几天空档期，备足进入市场的货物。</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p7713_2923">
-                        陕西临渭区                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约899公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/511382" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：2小时前</span>
-                    <span class="browse">阅读(8)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
+            <div class="clear"></div>
+        </div>
 
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p7713" class="name" id="quotation-related-title-0-5">红提</a>                                        <div class="gui_box" id="rule_box_1287740">
-                        <span class="gb_text"> - <span class="click_tu">单串重:1斤以上</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            单串重:1斤以上<br>
-                            小果率:1%以下<br>
-                            平均果径:18mm以上<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 1.5元/公斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/511382" target="_blank">郭伟</a></span><a href="http://www.ymt.com/space/511382" target="_blank">
-                    </a><a target="_blank" class="user-reporter" href="http://www.ymt.com/zt/reporter?ref=hangqing"></a>
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </div>
-                </div>
-                <div class="row_2"><a class="link" id="quotation-related-content-0-5" href="http://hangqing.ymt.com/dianping_1287740" target="_blank">价格有所下降，质量比以前更好了，由于大量红提葡萄已经上市，全国客商已经到来，这两天走货很快，有需要的朋友要提前预定！</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p7713_2923">
-                        陕西临渭区                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约899公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/511382" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：2小时前</span>
-                    <span class="browse">阅读(13)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
 
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p7438" class="name" id="quotation-related-title-0-6">冬枣</a>                                        <div class="gui_box" id="rule_box_1287737">
-                        <span class="gb_text"> - <span class="click_tu">大小:直筒</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            大小:直筒<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 2元/公斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/511382" target="_blank">郭伟</a></span><a href="http://www.ymt.com/space/511382" target="_blank">
-                    </a><a target="_blank" class="user-reporter" href="http://www.ymt.com/zt/reporter?ref=hangqing"></a>
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </div>
-                </div>
-                <div class="row_2"><a class="link" id="quotation-related-content-0-6" href="http://hangqing.ymt.com/dianping_1287737" target="_blank">冬枣批发价格最高均价是8元，最低均价为2元。北京的冬枣批发市场价格均价最低最高的是浙江批发市场价格。冬枣价格较高的批发市场并不是冬枣的产地，产品多来自陕西。陕西渭南大荔是“中国枣乡”，是陕西渭南最大的冬枣种植基地，以口感好、品质佳著称，是中国多地水果批发市场的选择对象。</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p7438_2923">
-                        陕西临渭区                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约899公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/511382" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：2小时前</span>
-                    <span class="browse">阅读(9)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p7713" class="name" id="quotation-related-title-0-7">红提</a>                                        <div class="gui_box" id="rule_box_1287735">
-                        <span class="gb_text"> - <span class="click_tu">单串重:1斤以上</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            单串重:1斤以上<br>
-                            小果率:1%以下<br>
-                            平均果径:18mm以上<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 1.5元/斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/511382" target="_blank">郭伟</a></span><a href="http://www.ymt.com/space/511382" target="_blank">
-                    </a><a target="_blank" class="user-reporter" href="http://www.ymt.com/zt/reporter?ref=hangqing"></a>
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </div>
-                </div>
-                <div class="row_2"><a class="link" id="quotation-related-content-0-7" href="http://hangqing.ymt.com/dianping_1287735" target="_blank">价格有所下降，质量比以前更好了，由于大量红提葡萄已经上市，全国客商已经到来，这两天走货很快，有需要的朋友要提前预定！</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p7713_2923">
-                        陕西临渭区                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约899公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/511382" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：2小时前</span>
-                    <span class="browse">阅读(12)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p7438" class="name" id="quotation-related-title-0-8">冬枣</a>                                        <div class="gui_box" id="rule_box_1287732">
-                        <span class="gb_text"> - <span class="click_tu">大小:直筒</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            大小:直筒<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 2元/公斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/511382" target="_blank">郭伟</a></span><a href="http://www.ymt.com/space/511382" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/511382" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/511382" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/511382" target="_blank"></a><a class="link" id="quotation-related-content-0-8" href="http://hangqing.ymt.com/dianping_1287732" target="_blank">陕西温棚冬枣大量上市了，质量高，颜色好，货源充足，价格平稳，欢迎预定！2元左右是露天冬枣，8元左右是大棚冬枣！</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p7438_2923">
-                        陕西临渭区                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约899公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/511382" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：2小时前</span>
-                    <span class="browse">阅读(10)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p7714" class="name" id="quotation-related-title-0-9">美国红提</a>                                        <div class="gui_box" id="rule_box_1287730">
-                        <span class="gb_text"> - <span class="click_tu">单串重:1斤以上</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            单串重:1斤以上<br>
-                            小果率:5%以下<br>
-                            平均果径:12mm以上<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 1.8元/公斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/511382" target="_blank">郭伟</a></span><a href="http://www.ymt.com/space/511382" target="_blank">
-                    </a><a target="_blank" class="user-reporter" href="http://www.ymt.com/zt/reporter?ref=hangqing"></a>
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </div>
-                </div>
-                <div class="row_2"><a class="link" id="quotation-related-content-0-9" href="http://hangqing.ymt.com/dianping_1287730" target="_blank">今年的葡萄价格真是不高，果农的红提葡萄都开园子了，价位也有所下降，但果子品质比之前更好了，加上陕西渭南这两天都是雨，全国客商都已经来到渭南葡萄基地，由于降价原因，最近几天走货很快，望广大客商抓住商机</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p7714_2923">
-                        陕西临渭区                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约899公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/511382" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：2小时前</span>
-                    <span class="browse">阅读(4)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p37930" class="name" id="quotation-related-title-0-10">砀山酥梨</a>                                        <div class="gui_box" id="rule_box_1287728">
-                        <span class="gb_text"> - <span class="click_tu">单个重:4两以上</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            单个重:4两以上<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 0.6元/公斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/511382" target="_blank">郭伟</a></span><a href="http://www.ymt.com/space/511382" target="_blank">
-                    </a><a target="_blank" class="user-reporter" href="http://www.ymt.com/zt/reporter?ref=hangqing"></a>
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </div>
-                </div>
-                <div class="row_2"><a class="link" id="quotation-related-content-0-10" href="http://hangqing.ymt.com/dianping_1287728" target="_blank">砀山梨近日已经上市，价格也已经下降，有想装的客户可以来实地看看。</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p37930_2923">
-                        陕西临渭区                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约899公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/511382" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：2小时前</span>
-                    <span class="browse">阅读(9)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p7713" class="name" id="quotation-related-title-0-11">红提</a>                                        <div class="gui_box" id="rule_box_1287725">
-                        <span class="gb_text"> - <span class="click_tu">单串重:1斤以上</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            单串重:1斤以上<br>
-                            小果率:1%以下<br>
-                            平均果径:18mm以上<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 1.5元/斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/511382" target="_blank">郭伟</a></span><a href="http://www.ymt.com/space/511382" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/511382" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/511382" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/511382" target="_blank"></a><a class="link" id="quotation-related-content-0-11" href="http://hangqing.ymt.com/dianping_1287725" target="_blank">红提葡萄今日价格有所下降，之前很多种植户不服价，今年的行情和经济一直处于下滑状态，现在种植户也已经普遍接受价格下滑的现实</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p7713_2923">
-                        陕西临渭区                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约899公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/511382" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：2小时前</span>
-                    <span class="browse">阅读(12)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p21211" class="name" id="quotation-related-title-0-12">东北红豆杉</a>                                        <div class="gui_box" id="rule_box_1287649">
-                        <span class="gb_text"> - <span class="click_tu">地径:16-18cm</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            地径:16-18cm<br>
-                            胸径:10-12cm<br>
-                            高度:1-1.5米<br>
-                            枝/丛数:2枝<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 150~280元/棵</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/399048" target="_blank"></a></span><a href="http://www.ymt.com/space/399048" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/399048" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/399048" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/399048" target="_blank"></a><a class="link" id="quotation-related-content-0-12" href="http://hangqing.ymt.com/dianping_1287649" target="_blank">一亩田官方认证信息员，欢迎来电来信咨询！
-                红豆杉，四季常绿，家庭造景，小区绿化，厂区行道树，拆迁占地树首选！我基地拥有全国最大的3万亩红豆杉，科研技术实力雄厚，可提供全程技术指导！</a></div>
-                <div class="row_3">
-                    <span class="enter-img">&nbsp;</span>
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p21211_1142?type=origin">
-                        江苏锡山区                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约581公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/399048" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：2小时前</span>
-                    <span class="browse">阅读(1)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p11507" class="name" id="quotation-related-title-0-13">南方红豆杉</a>                                        <div class="gui_box" id="rule_box_1287648">
-                        <span class="gb_text"> - <span class="click_tu">地径:&gt;20cm</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            地径:&gt;20cm<br>
-                            米径:&gt;20cm<br>
-                            胸径:&gt;20cm<br>
-                            高度:&gt;4米<br>
-                            冠幅:&gt;3米<br>
-                            枝/丛数:&gt;6枝<br>
-                            分枝点高度:&gt;3米<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 250~280元/棵</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/399048" target="_blank"></a></span><a href="http://www.ymt.com/space/399048" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/399048" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/399048" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/399048" target="_blank"></a><a class="link" id="quotation-related-content-0-13" href="http://hangqing.ymt.com/dianping_1287648" target="_blank">一亩田官方认证信息员，欢迎来电来信咨询！
-                红豆杉，四季常绿，家庭造景，小区绿化，厂区行道树，拆迁占地树首选！我基地拥有全国最大的3万亩红豆杉，科研技术实力雄厚，可提供全程技术指导！</a></div>
-                <div class="row_3">
-                    <span class="enter-img">&nbsp;</span>
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p11507_1142?type=origin">
-                        江苏锡山区                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约581公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/399048" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：2小时前</span>
-                    <span class="browse">阅读(10)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p11299" class="name" id="quotation-related-title-0-14">红豆杉</a>                                        <div class="gui_box" id="rule_box_1287647">
-                        <span class="gb_text"> - <span class="click_tu">高度:&gt;4米</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            地径:&gt;20cm<br>
-                            米径:&gt;20cm<br>
-                            胸径:&gt;20cm<br>
-                            高度:&gt;4米<br>
-                            冠幅:&gt;3米<br>
-                            枝/丛数:&gt;6枝<br>
-                            分枝点高度:&gt;3米<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 300~500元/棵</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/185048" target="_blank"></a></span><a href="http://www.ymt.com/space/185048" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/185048" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/185048" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/185048" target="_blank"></a><a class="link" id="quotation-related-content-0-14" href="http://hangqing.ymt.com/dianping_1287647" target="_blank">一亩田官方认证信息员，欢迎来电来信咨询！
-                红豆杉，四季常绿，家庭造景，小区绿化，厂区行道树，拆迁占地树首选！我基地拥有全国最大的3万亩红豆杉，科研技术实力雄厚，可提供全程技术指导！</a></div>
-                <div class="row_3">
-                    <span class="enter-img">&nbsp;</span>
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p11299_1142?type=origin">
-                        江苏锡山区                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约581公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/185048" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：2小时前</span>
-                    <span class="browse">阅读(8)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p44523" class="name" id="quotation-related-title-0-15">炎秀西兰花</a>                                        <div class="gui_box" id="rule_box_1287208">
-                        <span class="gb_text"> - <span class="click_tu">单个果重:0.8-1.5斤</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            单个果重:0.8-1.5斤<br>
-                            花粒:纯绿<br>
-                            单个直径:10厘米以上<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 0.9~1.1元/斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/467971" target="_blank">王智慧</a></span><a href="http://www.ymt.com/space/467971" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/467971" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/467971" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/467971" target="_blank"></a><a class="link" id="quotation-related-content-0-15" href="http://hangqing.ymt.com/dianping_1287208" target="_blank">供应山东莒县西兰花，供货量大，品质俱佳，货源充足。。</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p44523_1694">
-                        山东莒县                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约120公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/467971" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：4小时前</span>
-                    <span class="browse">阅读(14)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p28258" class="name" id="quotation-related-title-0-16">齐达利</a>                                        <div class="gui_box" id="rule_box_1287207">
-                        <span class="gb_text"> - <span class="click_tu">等级:一级</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            等级:一级<br>
-                            是否打冷:否<br>
-                            果径:三弧以上<br>
-                            包装:塑框<br>
-                            单个重:3两-4两<br>
-                            状态:大红<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 0.9~1元/斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/467971" target="_blank">王智慧</a></span><a href="http://www.ymt.com/space/467971" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/467971" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/467971" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/467971" target="_blank"></a><a class="link" id="quotation-related-content-0-16" href="http://hangqing.ymt.com/dianping_1287207" target="_blank">供应山东莒县大棚西红柿（大红，粉红），供货量大，品质俱佳，货源充足。</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p28258_1694">
-                        山东莒县                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约120公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/467971" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：4小时前</span>
-                    <span class="browse">阅读(13)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p32484" class="name" id="quotation-related-title-0-17">红星</a>                                        <div class="gui_box" id="rule_box_1287205">
-                        <span class="gb_text"> - <span class="click_tu">果径:70mm以上</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            果径:70mm以上<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 0.6~0.75元/斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/175936" target="_blank"></a></span><a href="http://www.ymt.com/space/175936" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/175936" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/175936" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/175936" target="_blank"></a><a class="link" id="quotation-related-content-0-17" href="http://hangqing.ymt.com/dianping_1287205" target="_blank">膜袋红星价格</a></div>
-                <div class="row_3">
-                    <span class="enter-img">&nbsp;</span>
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p32484_1702?type=origin">
-                        山东沂水县                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约101公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/175936" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：4小时前</span>
-                    <span class="browse">阅读(7)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p284746" class="name" id="quotation-related-title-0-18">西红柿苗</a>                                        <span class="text"> - 0.68~1.18元/棵</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/94606" target="_blank">武立旺</a></span><a href="http://www.ymt.com/space/94606" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/94606" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/94606" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/94606" target="_blank"></a><a class="link" id="quotation-related-content-0-18" href="http://hangqing.ymt.com/dianping_1287154" target="_blank">看苗订购优质硬粉西红柿苗子(常年订购)</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p284746_1682">
-                        山东岱岳区                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约186公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/94606" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：5小时前</span>
-                    <span class="browse">阅读(12)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p7401" class="name" id="quotation-related-title-0-19">砀山梨</a>                                        <div class="gui_box" id="rule_box_1287052">
-                        <span class="gb_text"> - <span class="click_tu">包装要求:光果</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            包装要求:光果<br>
-                            公母（仅限香梨选择）:不限<br>
-                            装箱规格:其他箱<br>
-                            单个果重:不限<br>
-                            果径:不限<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 0.7~0.8元/斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/201939" target="_blank">陈信</a></span><a href="http://www.ymt.com/space/201939" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/201939" target="_blank"></a><a class="link" id="quotation-related-content-0-19" href="http://hangqing.ymt.com/dianping_1287052" target="_blank">砀山酥梨大量出售，4两左右每斤0.7元，4两以上每斤0.9元，半斤以上每斤1.1元，地址，安徽省砀山县，电话，18726275885。</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p7401_1393">
-                        安徽砀山县                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约352公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/201939" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：10小时前</span>
-                    <span class="browse">阅读(10)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p8032" class="name" id="quotation-related-title-0-20">酥梨</a>                                        <div class="gui_box" id="rule_box_1287049">
-                        <span class="gb_text"> - <span class="click_tu">包装要求:光果</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            包装要求:光果<br>
-                            公母（仅限香梨选择）:不限<br>
-                            装箱规格:其他箱<br>
-                            单个果重:3-4两<br>
-                            果径:60mm以上<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 0.6~0.7元/斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/201939" target="_blank">陈信</a></span><a href="http://www.ymt.com/space/201939" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/201939" target="_blank"></a><a class="link" id="quotation-related-content-0-20" href="http://hangqing.ymt.com/dianping_1287049" target="_blank">砀山酥梨大量出售，4两左右每斤0.7元，4两以上每斤0.9元，半斤以上每斤1.1元，地址，安徽省砀山县，电话，18726275885。</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p8032_1393">
-                        安徽砀山县                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约352公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/201939" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：10小时前</span>
-                    <span class="browse">阅读(27)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p37930" class="name" id="quotation-related-title-0-21">砀山酥梨</a>                                        <div class="gui_box" id="rule_box_1286986">
-                        <span class="gb_text"> - <span class="click_tu">包装要求:光果</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            包装要求:光果<br>
-                            公母（仅限香梨选择）:不限<br>
-                            装箱规格:其他箱<br>
-                            单个果重:6-8两<br>
-                            果径:70mm以上<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 0.75~0.85元/斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/201939" target="_blank">陈信</a></span><a href="http://www.ymt.com/space/201939" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/201939" target="_blank"></a><a class="link" id="quotation-related-content-0-21" href="http://hangqing.ymt.com/dianping_1286986" target="_blank">砀山酥梨大量出售，4两左右每斤0.7元，4两以上每斤0.9元，半斤以上每斤1.1元，地址，安徽省砀山县，电话，18726275885。</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p37930_1393">
-                        安徽砀山县                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约352公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/201939" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：11小时前</span>
-                    <span class="browse">阅读(18)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p37930" class="name" id="quotation-related-title-0-22">砀山酥梨</a>                                        <div class="gui_box" id="rule_box_1286983">
-                        <span class="gb_text"> - <span class="click_tu">包装要求:光果</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            包装要求:光果<br>
-                            公母（仅限香梨选择）:不限<br>
-                            装箱规格:其他箱<br>
-                            单个果重:其他<br>
-                            果径:不限<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 0.8~1元/斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/201939" target="_blank">陈信</a></span><a href="http://www.ymt.com/space/201939" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/201939" target="_blank"></a><a class="link" id="quotation-related-content-0-22" href="http://hangqing.ymt.com/dianping_1286983" target="_blank">砀山酥梨大量出售，4两左右每斤0.7元，4两以上每斤0.9元，半斤以上每斤1.1元，地址，安徽省砀山县，电话，18726275885。</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p37930_1393">
-                        安徽砀山县                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约352公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/201939" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：11小时前</span>
-                    <span class="browse">阅读(54)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p37930" class="name" id="quotation-related-title-0-23">砀山酥梨</a>                                        <div class="gui_box" id="rule_box_1286979">
-                        <span class="gb_text"> - <span class="click_tu">包装要求:光果</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            包装要求:光果<br>
-                            公母（仅限香梨选择）:不限<br>
-                            装箱规格:其他箱<br>
-                            单个果重:4-5两<br>
-                            果径:60mm以上<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 0.6~0.7元/斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/201939" target="_blank">陈信</a></span><a href="http://www.ymt.com/space/201939" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/201939" target="_blank"></a><a class="link" id="quotation-related-content-0-23" href="http://hangqing.ymt.com/dianping_1286979" target="_blank">砀山酥梨大量出售，4两左右每斤0.7元，4两以上每斤0.9元，半斤以上每斤1.1元，地址，安徽省砀山县，电话，18726275885。</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p37930_1393">
-                        安徽砀山县                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约352公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/201939" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：11小时前</span>
-                    <span class="browse">阅读(51)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p32484" class="name" id="quotation-related-title-0-24">红星</a>                                        <div class="gui_box" id="rule_box_1286971">
-                        <span class="gb_text"> - <span class="click_tu">果径:75-85mm</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            果径:75-85mm<br>
-                            果颜色:其他<br>
-                            包装:纸箱<br>
-                            是否套袋:光果<br>
-                            是否贴字:否<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 0.8~1.2元/斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/201939" target="_blank">陈信</a></span><a href="http://www.ymt.com/space/201939" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/201939" target="_blank"></a><a class="link" id="quotation-related-content-0-24" href="http://hangqing.ymt.com/dianping_1286971" target="_blank">砀山酥梨大量出售，4两左右每斤0.7元，4两以上每斤0.9元，半斤以上每斤1.1元，地址，安徽省砀山县，电话，18726275885。</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p32484_1393">
-                        安徽砀山县                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约352公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/201939" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：11小时前</span>
-                    <span class="browse">阅读(62)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p37930" class="name" id="quotation-related-title-0-25">砀山酥梨</a>                                        <div class="gui_box" id="rule_box_1286961">
-                        <span class="gb_text"> - <span class="click_tu">包装要求:光果</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            包装要求:光果<br>
-                            公母（仅限香梨选择）:不限<br>
-                            装箱规格:其他箱<br>
-                            单个果重:其他<br>
-                            果径:不限<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 0.7~1元/斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/201939" target="_blank">陈信</a></span><a href="http://www.ymt.com/space/201939" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/201939" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/201939" target="_blank"></a><a class="link" id="quotation-related-content-0-25" href="http://hangqing.ymt.com/dianping_1286961" target="_blank">砀山酥梨大量出售，4两左右每斤0.7元，4两以上每斤0.9元，半斤以上每斤1.1元，地址，安徽省砀山县，电话，18726275885。</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p37930_1393">
-                        安徽砀山县                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约352公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/201939" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：11小时前</span>
-                    <span class="browse">阅读(44)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p7713" class="name" id="quotation-related-title-0-26">红提</a>                                        <div class="gui_box" id="rule_box_1286891">
-                        <span class="gb_text"> - <span class="click_tu">单串重:2斤以上</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            单串重:2斤以上<br>
-                            平均果径:18mm以上<br>
-                            小果率:1%以下<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 1.5元/公斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/511382" target="_blank">郭伟</a></span><a href="http://www.ymt.com/space/511382" target="_blank">
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </a></div><a href="http://www.ymt.com/space/511382" target="_blank">
-                </a></div><a href="http://www.ymt.com/space/511382" target="_blank">
-            </a><div class="row_2"><a href="http://www.ymt.com/space/511382" target="_blank"></a><a class="link" id="quotation-related-content-0-26" href="http://hangqing.ymt.com/dianping_1286891" target="_blank">陕西前几天连续3天的雨导致红提葡萄价格有所下滑，这两天等待的客商都进入了装车模式，未来三天后又是雨，抓住这几天空档期，备足进入市场的货物。</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p7713_2923">
-                        陕西临渭区                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约899公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/511382" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：12小时前</span>
-                    <span class="browse">阅读(43)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p7713" class="name" id="quotation-related-title-0-27">红提</a>                                        <div class="gui_box" id="rule_box_1286890">
-                        <span class="gb_text"> - <span class="click_tu">单串重:1斤以上</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            单串重:1斤以上<br>
-                            小果率:1%以下<br>
-                            平均果径:18mm以上<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 1.5元/公斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/511382" target="_blank">郭伟</a></span><a href="http://www.ymt.com/space/511382" target="_blank">
-                    </a><a target="_blank" class="user-reporter" href="http://www.ymt.com/zt/reporter?ref=hangqing"></a>
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </div>
-                </div>
-                <div class="row_2"><a class="link" id="quotation-related-content-0-27" href="http://hangqing.ymt.com/dianping_1286890" target="_blank">价格有所下降，质量比以前更好了，由于大量红提葡萄已经上市，全国客商已经到来，这两天走货很快，有需要的朋友要提前预定！</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p7713_2923">
-                        陕西临渭区                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约899公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/511382" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：12小时前</span>
-                    <span class="browse">阅读(67)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p7438" class="name" id="quotation-related-title-0-28">冬枣</a>                                        <div class="gui_box" id="rule_box_1286883">
-                        <span class="gb_text"> - <span class="click_tu">大小:直筒</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            大小:直筒<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 2元/公斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/511382" target="_blank">郭伟</a></span><a href="http://www.ymt.com/space/511382" target="_blank">
-                    </a><a target="_blank" class="user-reporter" href="http://www.ymt.com/zt/reporter?ref=hangqing"></a>
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </div>
-                </div>
-                <div class="row_2"><a class="link" id="quotation-related-content-0-28" href="http://hangqing.ymt.com/dianping_1286883" target="_blank">冬枣批发价格最高均价是8元，最低均价为2元。北京的冬枣批发市场价格均价最低最高的是浙江批发市场价格。冬枣价格较高的批发市场并不是冬枣的产地，产品多来自陕西。陕西渭南大荔是“中国枣乡”，是陕西渭南最大的冬枣种植基地，以口感好、品质佳著称，是中国多地水果批发市场的选择对象。</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p7438_2923">
-                        陕西临渭区                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约899公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/511382" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：12小时前</span>
-                    <span class="browse">阅读(70)</span>
-                </div>
-            </li>
-            <li>
-                <div class="row_1">
-
-                    <div class="r1_tit">
-                        【<a href="http://hangqing.ymt.com/dianping/p7713" class="name" id="quotation-related-title-0-29">红提</a>                                        <div class="gui_box" id="rule_box_1286881">
-                        <span class="gb_text"> - <span class="click_tu">单串重:1斤以上</span></span>
-                        <div class="td-hover-ceng">
-                            <i class="top-bg">&nbsp;</i>
-                            单串重:1斤以上<br>
-                            小果率:1%以下<br>
-                            平均果径:18mm以上<br>
-                        </div>
-                    </div>
-                        <span class="text"> - 1.5元/斤</span>】
-                    </div>
-                    <div class="r1_right">
-                        <span class="name"><a href="http://www.ymt.com/space/511382" target="_blank">郭伟</a></span><a href="http://www.ymt.com/space/511382" target="_blank">
-                    </a><a target="_blank" class="user-reporter" href="http://www.ymt.com/zt/reporter?ref=hangqing"></a>
-                        <span title="" class="aptitude-0" style="padding-left:0px;">&nbsp;</span>
-                    <span class="credit-box">
-                                            </span>
-                    </div>
-                </div>
-                <div class="row_2"><a class="link" id="quotation-related-content-0-29" href="http://hangqing.ymt.com/dianping_1286881" target="_blank">价格有所下降，质量比以前更好了，由于大量红提葡萄已经上市，全国客商已经到来，这两天走货很快，有需要的朋友要提前预定！</a></div>
-                <div class="row_3">
-                                <span class="addr">
-                    <a href="http://hangqing.ymt.com/dianping/p7713_2923">
-                        陕西临渭区                    </a>
-                </span>
-                    <span class="weather"></span>
-                    <span class="distance">距您约899公里</span>
-                    <div class="name">
-                        <a target="_blank" href="http://www.ymt.com/space/511382" class="dj">
-                        </a>
-                    </div>
-                    <span class="time">发布时间：12小时前</span>
-                    <span class="browse">阅读(69)</span>
-                </div>
-            </li>
-        </ul>
-        <div class="pub_page">
-            <span class="current">1</span><a class="item" rel="nofollow" href="http://hangqing.ymt.com/dianping/0/30?type=all">2</a><a class="item" rel="nofollow" href="http://hangqing.ymt.com/dianping/0/60?type=all">3</a><a class="item" rel="nofollow" href="http://hangqing.ymt.com/dianping/0/30?type=all">下一页</a><a class="item" rel="nofollow" href="http://hangqing.ymt.com/dianping/0/1170?type=all">尾页</a>        </div>
         <div class="clear">
         </div>
     </div>
-    <div class="shuju-sidebar fl">
-        <div class="other_same_sp">
-            <h3 class="fl_font">
-                广告位
-            </h3>
-            <ol class="they_list">
-                <li>
-                    <a href="http://www.ymt.com/gongying/50627625" target="_blank" class="tu"><img src="./今日农产品价格_农产品价格分析预测-一亩田农业网_files/82d98e071f9eeeea8838d10295d32698-120-100!-120-100!.jpg" width="120" height="100" alt=""></a>
 
-                    <a href="http://www.ymt.com/gongying/50627625" target="_blank" class="name">广告</a>
-                    <div class="je_bj">
-                        <span class="je">广告</span>
-                    </div>
-                    <div class="place">广告</div>
-                </li>
-                <li>
-                    <a href="http://www.ymt.com/gongying/50633440" target="_blank" class="tu"><img src="./今日农产品价格_农产品价格分析预测-一亩田农业网_files/7282650e81f2d37f1eb0c216b9996d42-120-100!-120-100!.jpg" width="120" height="100" alt=""></a>
-
-                    <a href="http://www.ymt.com/gongying/50633440" target="_blank" class="name">广告</a>
-                    <div class="je_bj">
-                        <span class="je">广告</span>
-                    </div>
-                    <div class="place">广告</div>
-                </li>
-                <li>
-                    <a href="http://www.ymt.com/gongying/50627658" target="_blank" class="tu"><img src="./今日农产品价格_农产品价格分析预测-一亩田农业网_files/159eed3beb3453aecd8ddf4e70eccf00-120-100!-120-100!.jpg" width="120" height="100" alt=""></a>
-
-                    <a href="http://www.ymt.com/gongying/50627658" target="_blank" class="name">广告</a>
-                    <div class="je_bj">
-                        <span class="je">广告</span>
-                    </div>
-                    <div class="place">广告</div>
-                </li>
-                <li>
-                    <a href="http://www.ymt.com/gongying/50645700" target="_blank" class="tu"><img src="./今日农产品价格_农产品价格分析预测-一亩田农业网_files/208f216645e974c1924f73b5b6c11e8a-120-100!-120-100!.jpg" width="120" height="100" alt=""></a>
-
-                    <a href="http://www.ymt.com/gongying/50645700" target="_blank" class="name">广告</a>
-                    <div class="je_bj">
-                        <span class="je">广告</span>
-                    </div>
-                    <div class="place">广告</div>
-                </li>
-                <li>
-                    <a href="http://www.ymt.com/gongying/50637030" target="_blank" class="tu"><img src="./今日农产品价格_农产品价格分析预测-一亩田农业网_files/6b909e5e73b35c5bab956f305fc9bf05-120-100!-120-100!.jpg" width="120" height="100" alt=""></a>
-
-                    <a href="http://www.ymt.com/gongying/50637030" target="_blank" class="name">广告</a>
-                    <div class="je_bj">
-                        <span class="je">广告</span>
-                    </div>
-                    <div class="place">广告</div>
-                </li>
-                <li>
-                    <a href="http://www.ymt.com/gongying/50634523" target="_blank" class="tu"><img src="./今日农产品价格_农产品价格分析预测-一亩田农业网_files/64f87f599eb20f4ada2c2bed6f6124cc-120-100!-120-100!.jpg" width="120" height="100" alt=""></a>
-
-                    <a href="http://www.ymt.com/gongying/50634523" target="_blank" class="name">广告</a>
-                    <div class="je_bj">
-                        <span class="je">广告</span>
-                    </div>
-                    <div class="place">广告</div>
-                </li>
-            </ol>
-            <a class="bigbtn-2 fs-14" target="_blank" href="http://www.ymt.com/supply">查 看 更 多</a>
-        </div>
-    </div>
     <div class="clear"></div>
     <div class="clear"></div>
-    <div class="other_same_sp w990 mt20">
-        <h3 class="fl_font">相关资讯<a href="http://zixun.ymt.com/" target="_blank" class="fr_more">查看更多 ...</a></h3>
-        <ol class="they_list">
-            <li>
-                <a class="tu" target="_blank" href="http://zixun.ymt.com/zfj/866362_1.html"><img height="100px" src="./今日农产品价格_农产品价格分析预测-一亩田农业网_files/d996a11a9e42e26e948a63af0e241171-158-100!.jpg"></a>
-                <a class="text" target="_blank" href="http://zixun.ymt.com/zfj/866362_1.html">一亩田实地考察：南阳社旗县500亩大葱滞销</a>
-            </li>
-            <li>
-                <a class="tu" target="_blank" href="http://zixun.ymt.com/zfj/866364_1.html"><img height="100px" src="./今日农产品价格_农产品价格分析预测-一亩田农业网_files/6f8f0cfae52545e1f8963783a6a5fb00-158-100!.jpg"></a>
-                <a class="text" target="_blank" href="http://zixun.ymt.com/zfj/866364_1.html">海南货源换青县 一亩田助天津批发商降低成本</a>
-            </li>
-            <li>
-                <a class="tu" target="_blank" href="http://zixun.ymt.com/zfj/866365_1.html"><img height="100px" src="./今日农产品价格_农产品价格分析预测-一亩田农业网_files/3f6f1590396626689ac1929fcb33bd31-158-100!.jpg"></a>
-                <a class="text" target="_blank" href="http://zixun.ymt.com/zfj/866365_1.html">沈阳打响“保卫胡萝卜”之战 一亩田成排头兵</a>
-            </li>
-            <li>
-                <a class="tu" target="_blank" href="http://zixun.ymt.com/zfj/866368_1.html"><img height="100px" src="./今日农产品价格_农产品价格分析预测-一亩田农业网_files/2f00b18ebad9f2b792ee1f8cc6dd3bd0-158-100!.jpg"></a>
-                <a class="text" target="_blank" href="http://zixun.ymt.com/zfj/866368_1.html">河北：青县团队助采购商寻得“跨年鸡”</a>
-            </li>
-            <li class="bbno">
-                <a class="tu" target="_blank" href="http://zixun.ymt.com/zfj/866370_1.html"><img height="100px" src="./今日农产品价格_农产品价格分析预测-一亩田农业网_files/e94e9a8cf5a8d979556b9e7cbaa362dd-158-100!.jpg"></a>
-                <a class="text" target="_blank" href="http://zixun.ymt.com/zfj/866370_1.html">喀左农户：参加一亩田培训卖出22.5吨黄瓜</a>
-            </li>
-        </ol>
-    </div>
-    <div class="weblinks">
-        <h3>友情链接：</h3>
-        <div class="weblinks_con">
-            <ul style="height: 380px;">
-                <li>
-                    <a target="_blank" title="园林吧" href="http://www.yuanlin8.com/">园林吧</a>
-                    <a target="_blank" title="家居" href="http://jiaju.jia.com/">家居</a>
-                    <a target="_blank" title="风向标" href="http://www.koala0712.com/">风向标</a>
-                    <a target="_blank" title="今商网" href="http://www.js1008.com/">今商网</a>
-                    <a target="_blank" title="女性健康知识" href="http://nxpd.wenkang.cn/">女性健康知识</a>
-                    <a target="_blank" title="那花园" href="http://www.nahuayuan.com/">那花园</a>
-                    <a target="_blank" title="西安房地产" href="http://xa.focus.cn/">西安房地产</a>
-                    <a target="_blank" title="作文素材" href="http://www.quhua.com/">作文素材</a>
-                    <a target="_blank" title="越剧名段" href="http://www.yuejuwang.com/">越剧名段</a>
-                    <a target="_blank" title="健康养生" href="http://www.jkys5.com/">健康养生</a>
-                    <a target="_blank" title="土地流转" href="http://www.tuliu.com/">土地流转</a>
-                    <a target="_blank" title="农村网" href="http://www.cuncunle.com/">农村网</a>
-                </li>
-                <li>
-                    <a target="_blank" title="九块九包邮" href="http://www.huipinzhe.com/">九块九包邮</a>
-                    <a target="_blank" title="翡翠网" href="http://www.taoyunet.com/">翡翠网</a>
-                    <a target="_blank" title="江苏加盟" href="http://jiangsu.3158.cn/">江苏加盟</a>
-                    <a target="_blank" title="买狗" href="http://tao.goulew.com/">买狗</a>
-                    <a target="_blank" title="有机蔬菜" href="http://www.yojicai.com/">有机蔬菜</a>
-                    <a target="_blank" title="打麻将技巧十句口诀" href="http://www.mjjq66.com/">打麻将技巧十句口诀</a>
-                    <a target="_blank" title="恩施景点大全" href="http://www.mishinan.com/">恩施景点大全</a>
-                    <a target="_blank" title="家常菜谱大全" href="http://www.wodecaipu.com/">家常菜谱大全</a>
-                    <a target="_blank" title="农化招商网" href="http://www.1988.tv/">农化招商网</a>
-                    <a target="_blank" title="得返利" href="http://www.defanli.com/">得返利</a>
-                    <a target="_blank" title="医疗新闻" href="http://news.hxyjw.com/">医疗新闻</a>
-                    <a target="_blank" title="汽车营销网" href="http://www.im4s.cn/">汽车营销网</a>
-                </li>
-                <li>
-                    <a target="_blank" title="宁波租房" href="http://zu.nb.fang.com/">宁波租房</a>
-                    <a target="_blank" title="农村致富好项目" href="http://www.nccyzf.com/">农村致富好项目</a>
-                    <a target="_blank" title="在线电影" href="http://4mpdy.com/">在线电影</a>
-                    <a target="_blank" title="农历查询" href="http://www.zgnongli.com/">农历查询</a>
-                    <a target="_blank" title="免费论文网" href="http://www.lunwenstudy.com/">免费论文网</a>
-                    <a target="_blank" title="健康饮食" href="http://food.panjk.com/">健康饮食</a>
-                    <a target="_blank" title="鄂州" href="http://www.xianzhaiwang.cn/">鄂州</a>
-                    <a target="_blank" title="生活小常识大全" href="http://www.360changshi.com/">生活小常识大全</a>
-                    <a target="_blank" title="团购大全" href="http://shop.hao224.com/">团购大全</a>
-                    <a target="_blank" title="会议网" href="http://www.huodongjia.com/">会议网</a>
-                    <a target="_blank" title="东莞市邮编" href="http://dongguan.youbian.com/">东莞市邮编</a>
-                    <a target="_blank" title="语文作文" href="http://www.27140.com/">语文作文</a>
-                </li>
-                <li>
-                    <a target="_blank" title="教程网" href="http://www.p-learning.com.cn/">教程网</a>
-                    <a target="_blank" title="新闻" href="http://news.asean168.com/">新闻</a>
-                    <a target="_blank" title="经典文集" href="http://www.jingdianwenji.com/">经典文集</a>
-                    <a target="_blank" title="动漫网" href="http://www.xh5.net/">动漫网</a>
-                    <a target="_blank" title="今日头条" href="http://www.zd2.net/">今日头条</a>
-                    <a target="_blank" title="灵异事件" href="http://www.afu88.com/">灵异事件</a>
-                    <a target="_blank" title="品牌特卖" href="http://brand.zhe800.com/">品牌特卖</a>
-                    <a target="_blank" title="搜猪网" href="http://www.soozhu.com/">搜猪网</a>
-                    <a target="_blank" title="丹东门户网" href="http://www.dd0415.net/">丹东门户网</a>
-                    <a target="_blank" title="汉川" href="http://www.hcw.so/">汉川</a>
-                    <a target="_blank" title="娱乐新闻" href="http://www.cooltuku.com/">娱乐新闻</a>
-                    <a target="_blank" title="造句大全" href="http://www.zaojuzi.com/">造句大全</a>
-                </li>
-                <li>
-                    <a target="_blank" title="符号大全" href="http://www.86262.com/">符号大全</a>
-                    <a target="_blank" title="济南房产网" href="http://jn.fang.anjuke.com/">济南房产网</a>
-                    <a target="_blank" title="银行利率" href="http://www.yetu.net/">银行利率</a>
-                    <a target="_blank" title="同城招聘" href="http://zp300.cn/">同城招聘</a>
-                    <a target="_blank" title="汽车时刻表" href="http://shikebiao.com.cn/">汽车时刻表</a>
-                    <a target="_blank" title="娱乐新闻网" href="http://www.chunchunwang.com/">娱乐新闻网</a>
-                    <a target="_blank" title="查字典英语网" href="http://yingyu.chazidian.com/">查字典英语网</a>
-                    <a target="_blank" title="全集网" href="http://www.quanji0.com/">全集网</a>
-                    <a target="_blank" title="中亚商务网" href="http://www.1688ru.com/">中亚商务网</a>
-                </li>
-                <li>
-                    <a target="_blank" title="园林吧" href="http://www.yuanlin8.com/">园林吧</a>
-                    <a target="_blank" title="家居" href="http://jiaju.jia.com/">家居</a>
-                    <a target="_blank" title="风向标" href="http://www.koala0712.com/">风向标</a>
-                    <a target="_blank" title="今商网" href="http://www.js1008.com/">今商网</a>
-                    <a target="_blank" title="女性健康知识" href="http://nxpd.wenkang.cn/">女性健康知识</a>
-                    <a target="_blank" title="那花园" href="http://www.nahuayuan.com/">那花园</a>
-                    <a target="_blank" title="西安房地产" href="http://xa.focus.cn/">西安房地产</a>
-                    <a target="_blank" title="作文素材" href="http://www.quhua.com/">作文素材</a>
-                    <a target="_blank" title="越剧名段" href="http://www.yuejuwang.com/">越剧名段</a>
-                    <a target="_blank" title="健康养生" href="http://www.jkys5.com/">健康养生</a>
-                    <a target="_blank" title="土地流转" href="http://www.tuliu.com/">土地流转</a>
-                    <a target="_blank" title="农村网" href="http://www.cuncunle.com/">农村网</a>
-                </li><li>
-                <a target="_blank" title="九块九包邮" href="http://www.huipinzhe.com/">九块九包邮</a>
-                <a target="_blank" title="翡翠网" href="http://www.taoyunet.com/">翡翠网</a>
-                <a target="_blank" title="江苏加盟" href="http://jiangsu.3158.cn/">江苏加盟</a>
-                <a target="_blank" title="买狗" href="http://tao.goulew.com/">买狗</a>
-                <a target="_blank" title="有机蔬菜" href="http://www.yojicai.com/">有机蔬菜</a>
-                <a target="_blank" title="打麻将技巧十句口诀" href="http://www.mjjq66.com/">打麻将技巧十句口诀</a>
-                <a target="_blank" title="恩施景点大全" href="http://www.mishinan.com/">恩施景点大全</a>
-                <a target="_blank" title="家常菜谱大全" href="http://www.wodecaipu.com/">家常菜谱大全</a>
-                <a target="_blank" title="农化招商网" href="http://www.1988.tv/">农化招商网</a>
-                <a target="_blank" title="得返利" href="http://www.defanli.com/">得返利</a>
-                <a target="_blank" title="医疗新闻" href="http://news.hxyjw.com/">医疗新闻</a>
-                <a target="_blank" title="汽车营销网" href="http://www.im4s.cn/">汽车营销网</a>
-            </li><li>
-                <a target="_blank" title="宁波租房" href="http://zu.nb.fang.com/">宁波租房</a>
-                <a target="_blank" title="农村致富好项目" href="http://www.nccyzf.com/">农村致富好项目</a>
-                <a target="_blank" title="在线电影" href="http://4mpdy.com/">在线电影</a>
-                <a target="_blank" title="农历查询" href="http://www.zgnongli.com/">农历查询</a>
-                <a target="_blank" title="免费论文网" href="http://www.lunwenstudy.com/">免费论文网</a>
-                <a target="_blank" title="健康饮食" href="http://food.panjk.com/">健康饮食</a>
-                <a target="_blank" title="鄂州" href="http://www.xianzhaiwang.cn/">鄂州</a>
-                <a target="_blank" title="生活小常识大全" href="http://www.360changshi.com/">生活小常识大全</a>
-                <a target="_blank" title="团购大全" href="http://shop.hao224.com/">团购大全</a>
-                <a target="_blank" title="会议网" href="http://www.huodongjia.com/">会议网</a>
-                <a target="_blank" title="东莞市邮编" href="http://dongguan.youbian.com/">东莞市邮编</a>
-                <a target="_blank" title="语文作文" href="http://www.27140.com/">语文作文</a>
-            </li><li>
-                <a target="_blank" title="教程网" href="http://www.p-learning.com.cn/">教程网</a>
-                <a target="_blank" title="新闻" href="http://news.asean168.com/">新闻</a>
-                <a target="_blank" title="经典文集" href="http://www.jingdianwenji.com/">经典文集</a>
-                <a target="_blank" title="动漫网" href="http://www.xh5.net/">动漫网</a>
-                <a target="_blank" title="今日头条" href="http://www.zd2.net/">今日头条</a>
-                <a target="_blank" title="灵异事件" href="http://www.afu88.com/">灵异事件</a>
-                <a target="_blank" title="品牌特卖" href="http://brand.zhe800.com/">品牌特卖</a>
-                <a target="_blank" title="搜猪网" href="http://www.soozhu.com/">搜猪网</a>
-                <a target="_blank" title="丹东门户网" href="http://www.dd0415.net/">丹东门户网</a>
-                <a target="_blank" title="汉川" href="http://www.hcw.so/">汉川</a>
-                <a target="_blank" title="娱乐新闻" href="http://www.cooltuku.com/">娱乐新闻</a>
-                <a target="_blank" title="造句大全" href="http://www.zaojuzi.com/">造句大全</a>
-            </li><li>
-                <a target="_blank" title="符号大全" href="http://www.86262.com/">符号大全</a>
-                <a target="_blank" title="济南房产网" href="http://jn.fang.anjuke.com/">济南房产网</a>
-                <a target="_blank" title="银行利率" href="http://www.yetu.net/">银行利率</a>
-                <a target="_blank" title="同城招聘" href="http://zp300.cn/">同城招聘</a>
-                <a target="_blank" title="汽车时刻表" href="http://shikebiao.com.cn/">汽车时刻表</a>
-                <a target="_blank" title="娱乐新闻网" href="http://www.chunchunwang.com/">娱乐新闻网</a>
-                <a target="_blank" title="查字典英语网" href="http://yingyu.chazidian.com/">查字典英语网</a>
-                <a target="_blank" title="全集网" href="http://www.quanji0.com/">全集网</a>
-                <a target="_blank" title="中亚商务网" href="http://www.1688ru.com/">中亚商务网</a>
-            </li></ul>
-        </div>
-        <a class="weblinks-more" href="http://www.ymt.com/friendlink">更多</a>
-    </div>
 </div>
+<script>
+    function category(id) {
+        $(id).parent().siblings().filter(".active").removeClass("active");
+        $(id).parent().addClass("active");
+    }
+</script>
